@@ -1,4 +1,3 @@
-# Kubernetes-daily-practices
 # 🚀 Kubernetes Daily Practice
 
 # 📌 Overview
