@@ -1,0 +1,26 @@
+
+kind: Deployment
+
+metadata:
+  name: flask-deployment
+  namespace: flask-app
+  labels:
+    app: flask
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask
+
+  template:
+    metadata:
+      labels:
+        app: flask
+
+    spec:
+      containers:
+        - name: flask-container
+          image: trainwithshubham/python-flask-app:latest
+          ports:
+            - containerPort: 5000
